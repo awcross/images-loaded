@@ -1,0 +1,71 @@
+{
+  "name": "images-loaded",
+  "version": "0.0.0",
+  "description": "Wait for images to load using promises",
+  "license": "MIT",
+  "repository": "awcross/images-loaded",
+  "author": {
+    "name": "Alex Cross",
+    "email": "crossaw@gmail.com",
+    "url": "https://alexcross.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "image",
+    "load",
+    "promise",
+    "es6",
+    "es2015",
+    "html",
+    "dom",
+    "wait",
+    "ready"
+  ],
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-preset-env": "^1.1.5",
+    "rollup": "^0.37.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^6.0.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "xo": "^0.16.0"
+  },
+  "ava": {
+    "require": [
+      "./test/helpers/setup-browser-env.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "> 1%"
+            ]
+          },
+          "modules": false,
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "browser",
+      "es6"
+    ],
+    "rules": {
+      "padded-blocks": 0
+    }
+  }
+}
