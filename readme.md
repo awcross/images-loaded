@@ -15,7 +15,7 @@ $ npm install --save images-loaded
 ```js
 const imagesLoaded = require('images-loaded');
 
-imagesLoaded('.container').then(() => {
+imagesLoaded('.container').then(elements => {
 	// images are hot and ready
 });
 ```
@@ -42,14 +42,14 @@ Type: `Object`
 Type: `string[]`<br>
 Default: `[]`
 
-Can be passed a list of style properties to also check, e.g. `background-image`, `border-image`, etc.
+Can be passed a list of DOM style camelCase properties to check. For example, `backgroundImage`, `borderImage`, etc.
 
 ##### attrs
 
 Type: `string[]`<br>
 Default: `[]`
 
-Can be passed a list of attributes to check, such as `poster` on a video element.
+Can be passed a list of attributes to check, such as `poster` in a video tag.
 
 
 ## Browser Support
