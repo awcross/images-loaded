@@ -36,11 +36,6 @@
     "rollup-plugin-node-resolve": "^2.0.0",
     "xo": "^0.16.0"
   },
-  "ava": {
-    "require": [
-      "./test/helpers/setup-browser-env.js"
-    ]
-  },
   "babel": {
     "presets": [
       [
