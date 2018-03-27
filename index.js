@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-add-event-listener */
 'use strict';
 
 const slice = Array.prototype.slice;

@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/prefer-add-event-listener */
+
 var slice = Array.prototype.slice;
 var reurl = /url\(\s*(['"]?)(.*?)\1\s*\)/g;
 
