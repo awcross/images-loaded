@@ -1,6 +1,6 @@
 {
   "name": "images-loaded",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Wait for images to load using promises",
   "license": "MIT",
   "repository": "awcross/images-loaded",
